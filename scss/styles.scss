@@ -84,9 +84,6 @@ body {
   padding: 0;
 
   .workshop {
-
-
-
     .banner {
       width: 100%;
       margin: 0 0 10px 0;
@@ -121,7 +118,7 @@ body {
 
         img{
             width: 400px;
-            height: 400px;
+            height: auto;
             object-fit: contain;
             margin: 2rem auto;
             display: block;
