@@ -25,6 +25,7 @@
     "scss": "^0.2.4"
   },
   "devDependencies": {
+    "cssnano": "^4.1.8",
     "node-sass": "^4.11.0"
   }
 }
