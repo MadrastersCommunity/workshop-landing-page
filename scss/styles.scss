@@ -5,15 +5,15 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-.navbar{
-    // min-height: 4rem;
-    padding:0 1rem;
-    &.is-primary{
-        box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.12)
-    }
-    @media screen and (max-width: $tablet) {
-        padding:0;
-    }
+.navbar {
+  // min-height: 4rem;
+  padding: 0 1rem;
+  &.is-primary {
+    box-shadow: 2px 2px 2px rgba($color: #000000, $alpha: 0.12);
+  }
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .navbar-item {
@@ -87,11 +87,80 @@ body {
     .banner {
       width: 100%;
       margin: 0 0 10px 0;
+      display: block;
+      position: relative;
+
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+
+      .banner-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        .button {
+          font-weight: bold;
+          text-transform: uppercase;
+          border-radius: 0;
+          font-size: 0.9rem;
+          padding: 1.2em 1.8em;
+          box-shadow: 8px 10px 10px rgba(0,0,0,0.17);
+          border-radius: 1px;
+          transition: all 0.3s ease-in;
+
+         
+          i,svg{
+            display: none;
+            margin-left: 8px;
+          }
+
+          &:hover{
+            transform: translateX(-4px);
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.17);
+            padding: 1.2em 1.5em;
+          }
+
+          &:hover i,&:hover svg{
+            display: inline-block;
+          }
+
+          @media screen and (max-width: 767px) {  
+            padding: 1.2em 1.6em;
+            font-size: 0.7rem;
+          }
+
+        }
+
+        .button.is-workshop-1-button {
+          top: -8%;
+          left: 8%;
+          background-color: #ffb448;
+          color: $white;
+          border-color: transparent;
+         
+        }
+
+
+        .button.is-workshop-2-button {
+          top: -16%;
+          left: 29%;
+          background-color: #0fe2d6;
+          color: $white;
+          border-color: transparent;
+         
+        }
+
+      }
+
+      
     }
     .about {
       padding: 4rem;
@@ -116,34 +185,34 @@ body {
         font-weight: 300;
         margin: 1rem 0;
 
-        img{
-            width: 400px;
-            height: auto;
-            object-fit: contain;
-            margin: 2rem auto;
-            display: block;
+        img {
+          width: 400px;
+          height: auto;
+          object-fit: contain;
+          margin: 2rem auto;
+          display: block;
         }
       }
     }
   }
 }
 
-.has-workshop-1-color{
-    color: $workshop-1;
-    border-color: $workshop-1;
+.has-workshop-1-color {
+  color: $workshop-1;
+  border-color: $workshop-1;
 }
 
-.has-workshop-2-color{
-    color: $workshop-2;
-    border-color: $workshop-2;
+.has-workshop-2-color {
+  color: $workshop-2;
+  border-color: $workshop-2;
 }
 
-.has-0-padding{
-    padding: 0;
+.has-0-padding {
+  padding: 0;
 }
 
-.has-0-margin{
-    margin: 0;
+.has-0-margin {
+  margin: 0;
 }
 
 footer {
