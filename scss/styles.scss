@@ -5,6 +5,32 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .navbar {
   // min-height: 4rem;
   padding: 0 1rem;
@@ -14,12 +40,16 @@ body {
   @media screen and (max-width: $tablet) {
     padding: 0;
   }
-}
 
-.navbar-item {
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: small;
+  .navbar-item {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+  }
+
+  .navbar-burger span {
+    height: 2px;
+  }
 }
 
 .full-width-section {
@@ -83,7 +113,50 @@ body {
   margin: 0;
   padding: 0;
 
+  .workshops-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
   .workshop {
+    display: inline-block;
+    width: 50%;
+
+    .sidebar {
+      display: none;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      flex-direction: row;
+      justify-content: center;
+
+      p {
+        width: 8px;
+        word-wrap: break-word;
+      }
+    }
+
+    &.is-workshop-1.is-active {
+      animation: slideInLeft 0.2s;
+    }
+
+    &.is-workshop-2.is-active {
+      animation: slideInRight 0.2s;
+    }
+
+    &.is-workshop-1 .sidebar {
+      background-color: $workshop-1;
+      animation: slideInLeft 0.1s;
+    }
+
+    &.is-workshop-2 .sidebar {
+      background-color: $workshop-2;
+      animation: slideInRight 0.1s;
+    }
+
     .banner {
       width: 100%;
       margin: 0 0 10px 0;
@@ -96,7 +169,7 @@ body {
         object-fit: contain;
       }
 
-      .banner-overlay{
+      .banner-overlay {
         position: absolute;
         top: 0;
         left: 0;
@@ -112,31 +185,31 @@ body {
           border-radius: 0;
           font-size: 0.9rem;
           padding: 1.2em 1.8em;
-          box-shadow: 8px 10px 10px rgba(0,0,0,0.17);
+          box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
           transition: all 0.3s ease-in;
 
-         
-          i,svg{
+          i,
+          svg {
             display: none;
             margin-left: 8px;
           }
 
-          &:hover{
-            transform: translateX(-4px);
-            box-shadow: 10px 10px 10px rgba(0,0,0,0.17);
+          &:hover {
+            transform: translateX(-3px);
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.17);
             padding: 1.2em 1.5em;
           }
 
-          &:hover i,&:hover svg{
+          &:hover i,
+          &:hover svg {
             display: inline-block;
           }
 
-          @media screen and (max-width: 767px) {  
+          @media screen and (max-width: 767px) {
             padding: 1.2em 1.6em;
             font-size: 0.7rem;
           }
-
         }
 
         .button.is-workshop-1-button {
@@ -145,9 +218,7 @@ body {
           background-color: #ffb448;
           color: $white;
           border-color: transparent;
-         
         }
-
 
         .button.is-workshop-2-button {
           top: -16%;
@@ -155,12 +226,12 @@ body {
           background-color: #0fe2d6;
           color: $white;
           border-color: transparent;
-         
+
+          @media screen and (max-width: 767px) {
+            left: 20%;
+          }
         }
-
       }
-
-      
     }
     .about {
       padding: 4rem;
@@ -194,6 +265,39 @@ body {
         }
       }
     }
+
+    @media screen and (max-width: $tablet) {
+      width: 10%;
+
+      .banner,
+      .about {
+        display: none;
+      }
+
+      .sidebar {
+        display: flex;
+      }
+
+      &.is-active {
+        width: 90%;
+
+        .banner,
+        .about {
+          display: block;
+        }
+
+        .sidebar {
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (max-width: $desktop) {
+      &.is-active {
+        animation: none;
+      }
+    }
+
   }
 }
 

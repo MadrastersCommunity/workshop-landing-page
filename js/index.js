@@ -29,4 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    const $workshop = Array.prototype.slice.call(document.querySelectorAll('.workshop'), 0);
+    const $sidebar = Array.prototype.slice.call(document.querySelectorAll('.workshop .sidebar'), 0);
+    if ($sidebar.length > 0) {
+  
+      $sidebar.forEach( el => {
+        el.addEventListener('click', () => {
+  
+          const target = el.parentElement.dataset.target;
+          const $target = document.getElementById(target);
+  
+          el.parentElement.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+  
+        });
+      });
+    }
+
+
+
   });

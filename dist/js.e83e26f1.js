@@ -179,24 +179,40 @@ require('../scss/styles.scss');
  */
 document.addEventListener('DOMContentLoaded', function () {
 
-  /**
-   * For Navbar Collapse
-   */
+        /**
+         * For Navbar Collapse
+         */
 
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  if ($navbarBurgers.length > 0) {
+        var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
 
-    $navbarBurgers.forEach(function (el) {
-      el.addEventListener('click', function () {
+                $navbarBurgers.forEach(function (el) {
+                        el.addEventListener('click', function () {
 
-        var target = el.dataset.target;
-        var $target = document.getElementById(target);
+                                var target = el.dataset.target;
+                                var $target = document.getElementById(target);
 
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-      });
-    });
-  }
+                                el.classList.toggle('is-active');
+                                $target.classList.toggle('is-active');
+                        });
+                });
+        }
+
+        var $workshop = Array.prototype.slice.call(document.querySelectorAll('.workshop'), 0);
+        var $sidebar = Array.prototype.slice.call(document.querySelectorAll('.workshop .sidebar'), 0);
+        if ($sidebar.length > 0) {
+
+                $sidebar.forEach(function (el) {
+                        el.addEventListener('click', function () {
+
+                                var target = el.parentElement.dataset.target;
+                                var $target = document.getElementById(target);
+
+                                el.parentElement.classList.toggle('is-active');
+                                $target.classList.toggle('is-active');
+                        });
+                });
+        }
 }); /**
      * IMPORT SCSS
      */
@@ -229,7 +245,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '63311' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '65253' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 

@@ -43,7 +43,8 @@
             aria-expanded="false"
             data-target="navbarMenu"
           >
-            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span> 
+            <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
@@ -61,9 +62,10 @@
     </header>
     <main>
       <section class="main-section">
-        <div class="columns has-0-margin">
-          <div class="column has-0-padding">
-            <div class="workshop">
+        <!-- <div class="columns has-0-margin"> -->
+            <div class="workshops-wrapper">
+          <!-- <div class="column has-0-padding"> -->
+            <div class="workshop is-workshop-1 is-active" id="workshop1" data-target="workshop2">
               <div class="banner">
                 <img src="images/tamil-caligraphy-workshop.png" />
                 <div class="banner-overlay">
@@ -102,10 +104,14 @@
                   nulla pariatur.
                 </p>
               </div>
+              <div class="sidebar">
+                  <p>tamil caligraphy</p>
+                </div>
+
             </div>
-          </div>
-          <div class="column has-0-padding">
-            <div class="workshop">
+          <!-- </div> -->
+          <!-- <div class="column has-0-padding"> -->
+            <div class="workshop is-workshop-2" id="workshop2" data-target="workshop1">
               <div class="banner">
                 <img src="images/micro-interaction-workshop-banner.png" />
                 <div class="banner-overlay">
@@ -144,8 +150,12 @@
                   pariatur.
                 </p>
               </div>
+
+              <div class="sidebar">
+                <p>Micro interaction</p>
+              </div>
             </div>
-          </div>
+          <!-- </div> -->
         </div>
       </section>
       <section class="full-width-section">
