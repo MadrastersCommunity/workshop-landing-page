@@ -6844,18 +6844,18 @@ body {
       flex-direction: row;
       justify-content: center; }
       .main-section .workshop .sidebar p {
-        width: 8px;
-        word-wrap: break-word; }
+        font-size: 22px;
+        writing-mode: vertical-lr; }
     .main-section .workshop.is-workshop-1.is-active {
-      animation: slideInLeft 0.2s; }
+      animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-2.is-active {
-      animation: slideInRight 0.2s; }
+      animation: slideInRight 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-1 .sidebar {
       background-color: #e22f26;
-      animation: slideInLeft 0.1s; }
+      animation: slideInLeft 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-2 .sidebar {
       background-color: #38b6e0;
-      animation: slideInRight 0.1s; }
+      animation: slideInRight 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop .banner {
       width: 100%;
       margin: 0 0 10px 0;
@@ -6882,11 +6882,16 @@ body {
           padding: 1.2em 1.8em;
           box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
-          transition: all 0.3s ease-in; }
+          transition: all 0.3s ease-in;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
           .main-section .workshop .banner .banner-overlay .button i,
           .main-section .workshop .banner .banner-overlay .button svg {
             display: none;
-            margin-left: 8px; }
+            margin-left: 8px;
+            font-size: 0.75rem;
+            margin-top: -2px; }
           .main-section .workshop .banner .banner-overlay .button:hover {
             transform: translateX(-3px);
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.17);
@@ -6938,22 +6943,22 @@ body {
           display: block; }
     @media screen and (max-width: 769px) {
       .main-section .workshop {
-        width: 10%; }
+        width: 20%; }
         .main-section .workshop .banner,
         .main-section .workshop .about {
           display: none; }
         .main-section .workshop .sidebar {
           display: flex; }
         .main-section .workshop.is-active {
-          width: 90%; }
+          width: 80%; }
           .main-section .workshop.is-active .banner,
           .main-section .workshop.is-active .about {
             display: block; }
           .main-section .workshop.is-active .sidebar {
             display: none; } }
-    @media screen and (max-width: 1088px) {
+    @media screen and (min-width: 769px) {
       .main-section .workshop.is-active {
-        animation: none; } }
+        animation: none !important; } }
 
 .has-workshop-1-color {
   color: #e22f26;

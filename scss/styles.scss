@@ -134,27 +134,30 @@ body {
       justify-content: center;
 
       p {
-        width: 8px;
-        word-wrap: break-word;
+        // width: 8px;
+        // word-wrap: break-word;
+        font-size: 22px;
+        writing-mode: vertical-lr;
       }
     }
 
     &.is-workshop-1.is-active {
-      animation: slideInLeft 0.2s;
+      animation: slideInLeft 0.2s cubic-bezier(.09,.73,.97,.62);
+  
     }
 
     &.is-workshop-2.is-active {
-      animation: slideInRight 0.2s;
+      animation: slideInRight 0.2s cubic-bezier(.09,.73,.97,.62);
     }
 
     &.is-workshop-1 .sidebar {
       background-color: $workshop-1;
-      animation: slideInLeft 0.1s;
+      animation: slideInLeft 0.1s cubic-bezier(.09,.73,.97,.62);
     }
 
     &.is-workshop-2 .sidebar {
       background-color: $workshop-2;
-      animation: slideInRight 0.1s;
+      animation: slideInRight 0.1s cubic-bezier(.09,.73,.97,.62);
     }
 
     .banner {
@@ -188,11 +191,16 @@ body {
           box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
           transition: all 0.3s ease-in;
+          display: flex;
+          align-items: center;
+          justify-content: center;
 
           i,
           svg {
             display: none;
             margin-left: 8px;
+            font-size: 0.75rem;
+            margin-top: -2px;
           }
 
           &:hover {
@@ -267,7 +275,7 @@ body {
     }
 
     @media screen and (max-width: $tablet) {
-      width: 10%;
+      width: 20%;
 
       .banner,
       .about {
@@ -279,7 +287,7 @@ body {
       }
 
       &.is-active {
-        width: 90%;
+        width: 80%;
 
         .banner,
         .about {
@@ -292,9 +300,9 @@ body {
       }
     }
 
-    @media screen and (max-width: $desktop) {
+    @media screen and (min-width: $tablet) {
       &.is-active {
-        animation: none;
+        animation: none!important;
       }
     }
 

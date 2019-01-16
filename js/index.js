@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    const $workshop = Array.prototype.slice.call(document.querySelectorAll('.workshop'), 0);
+    //const $workshop = Array.prototype.slice.call(document.querySelectorAll('.workshop'), 0);
     const $sidebar = Array.prototype.slice.call(document.querySelectorAll('.workshop .sidebar'), 0);
     if ($sidebar.length > 0) {
   
