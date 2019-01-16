@@ -6931,6 +6931,9 @@ body {
               left: 20%; } }
     .main-section .workshop .about {
       padding: 4rem; }
+      @media screen and (max-width: 769px) {
+        .main-section .workshop .about {
+          padding: 3rem; } }
       .main-section .workshop .about .title {
         font-size: 2.2rem;
         font-weight: 500;
@@ -6958,21 +6961,21 @@ body {
         .main-section .workshop .banner,
         .main-section .workshop .about {
           display: none; }
-        .main-section .workshop .sidebar, .main-section .workshop.is-workshop-1 .sidebar, .main-section .workshop.is-workshop-2 .sidebar {
+        .main-section .workshop .sidebar {
           display: flex; }
         .main-section .workshop.is-active {
           width: 80%; }
           .main-section .workshop.is-active .banner,
           .main-section .workshop.is-active .about {
             display: block; }
-          .main-section .workshop.is-active .sidebar, .main-section .workshop.is-active.is-workshop-1 .sidebar, .main-section .workshop.is-active.is-workshop-2 .sidebar {
+          .main-section .workshop.is-active .sidebar {
             display: none; }
         .main-section .workshop.is-initial {
           width: 50%; }
           .main-section .workshop.is-initial .banner,
           .main-section .workshop.is-initial .about {
             display: none; }
-          .main-section .workshop.is-initial .sidebar, .main-section .workshop.is-initial.is-workshop-1 .sidebar, .main-section .workshop.is-initial.is-workshop-2 .sidebar {
+          .main-section .workshop.is-initial .sidebar {
             display: flex; } }
     @media screen and (min-width: 769px) {
       .main-section .workshop.is-active {
