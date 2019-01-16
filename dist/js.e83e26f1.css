@@ -6943,7 +6943,8 @@ body {
         font-size: 2.2rem;
         font-weight: 500;
         margin-bottom: 1rem;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        word-wrap: break-word; }
         .main-section .workshop .about .title span {
           font-weight: 900; }
       .main-section .workshop .about .underline {
