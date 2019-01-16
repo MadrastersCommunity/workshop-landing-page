@@ -146,6 +146,14 @@ body {
       }
     }
 
+    &.is-workshop-1{
+      background-color: #fef7f7;
+    }
+
+    &.is-workshop-2{
+      background-color: #f5fbfd;
+    }
+
     &.is-workshop-1.is-active {
       animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62);
     }

@@ -6850,6 +6850,10 @@ body {
         writing-mode: vertical-lr;
         text-transform: uppercase;
         margin-top: 20px; }
+    .main-section .workshop.is-workshop-1 {
+      background-color: #fef7f7; }
+    .main-section .workshop.is-workshop-2 {
+      background-color: #f5fbfd; }
     .main-section .workshop.is-workshop-1.is-active {
       animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-2.is-active {
