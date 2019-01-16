@@ -6843,8 +6843,7 @@ body {
       color: white;
       font-weight: bold;
       flex-direction: row;
-      justify-content: center;
-      display: flex; }
+      justify-content: center; }
       .main-section .workshop .sidebar p {
         font-size: 26px;
         writing-mode: vertical-lr;

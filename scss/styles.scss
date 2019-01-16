@@ -133,7 +133,7 @@ body {
       font-weight: bold;
       flex-direction: row;
       justify-content: center;
-      display: flex;
+      //display: flex;
 
       p {
         // width: 8px;
@@ -296,7 +296,7 @@ body {
         //visibility: hidden;
       }
 
-      .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
+      .sidebar {
         display: flex;
         //visibility: visible;
       }
@@ -310,7 +310,7 @@ body {
           //visibility: visible;
         }
 
-        .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
+        .sidebar {
           display: none;
           //visibility: hidden;
         }
@@ -324,7 +324,7 @@ body {
           //visibility: hidden;
         }
 
-        .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
+        .sidebar {
           display: flex;
           //visibility: visible;
         }
