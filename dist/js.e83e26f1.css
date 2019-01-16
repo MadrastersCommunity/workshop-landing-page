@@ -6833,7 +6833,8 @@ body {
     flex-direction: row; }
   .main-section .workshop {
     display: inline-block;
-    width: 50%; }
+    width: 50%;
+    min-height: 100vh; }
     .main-section .workshop .sidebar {
       display: none;
       height: 100%;
@@ -6842,20 +6843,31 @@ body {
       color: white;
       font-weight: bold;
       flex-direction: row;
-      justify-content: center; }
+      justify-content: center;
+      display: flex; }
       .main-section .workshop .sidebar p {
-        font-size: 22px;
-        writing-mode: vertical-lr; }
+        font-size: 26px;
+        writing-mode: vertical-lr;
+        text-transform: uppercase;
+        margin-top: 20px; }
     .main-section .workshop.is-workshop-1.is-active {
       animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-2.is-active {
       animation: slideInRight 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-1 .sidebar {
       background-color: #e22f26;
+      background-image: url("tamil-calligraphy-bg.d47af501.png");
       animation: slideInLeft 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
+      .main-section .workshop.is-workshop-1 .sidebar p {
+        transform: rotate(-180deg);
+        text-align: right; }
     .main-section .workshop.is-workshop-2 .sidebar {
       background-color: #38b6e0;
+      background-image: url("micro-interaction-bg.f89aa0a9.png");
+      background-repeat: repeat;
       animation: slideInRight 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
+      .main-section .workshop.is-workshop-2 .sidebar p {
+        text-align: left; }
     .main-section .workshop .banner {
       width: 100%;
       margin: 0 0 10px 0;
@@ -6955,7 +6967,14 @@ body {
           .main-section .workshop.is-active .about {
             display: block; }
           .main-section .workshop.is-active .sidebar {
-            display: none; } }
+            display: none; }
+        .main-section .workshop.is-initial {
+          width: 50%; }
+          .main-section .workshop.is-initial .banner,
+          .main-section .workshop.is-initial .about {
+            display: none; }
+          .main-section .workshop.is-initial .sidebar {
+            display: flex; } }
     @media screen and (min-width: 769px) {
       .main-section .workshop.is-active {
         animation: none !important; } }

@@ -122,6 +122,7 @@ body {
   .workshop {
     display: inline-block;
     width: 50%;
+    min-height: 100vh;
 
     .sidebar {
       display: none;
@@ -132,12 +133,15 @@ body {
       font-weight: bold;
       flex-direction: row;
       justify-content: center;
+      display: flex;
 
       p {
         // width: 8px;
         // word-wrap: break-word;
-        font-size: 22px;
+        font-size: 26px;
         writing-mode: vertical-lr;
+        text-transform: uppercase;
+        margin-top: 20px;
       }
     }
 
@@ -152,12 +156,22 @@ body {
 
     &.is-workshop-1 .sidebar {
       background-color: $workshop-1;
+      background-image: url("../images/tamil-calligraphy-bg.png");
       animation: slideInLeft 0.1s cubic-bezier(.09,.73,.97,.62);
+      p{
+        transform: rotate(-180deg);
+        text-align: right;
+      }
     }
 
     &.is-workshop-2 .sidebar {
       background-color: $workshop-2;
+      background-image: url("../images/micro-interaction-bg.png");
+      background-repeat: repeat;
       animation: slideInRight 0.1s cubic-bezier(.09,.73,.97,.62);
+      p{
+        text-align: left;
+      }
     }
 
     .banner {
@@ -280,10 +294,12 @@ body {
       .banner,
       .about {
         display: none;
+        //visibility: hidden;
       }
 
       .sidebar {
         display: flex;
+        //visibility: visible;
       }
 
       &.is-active {
@@ -292,10 +308,26 @@ body {
         .banner,
         .about {
           display: block;
+          //visibility: visible;
         }
 
         .sidebar {
           display: none;
+          //visibility: hidden;
+        }
+      }
+
+      &.is-initial {
+        width:50%;
+        .banner,
+        .about {
+          display: none;
+          //visibility: hidden;
+        }
+  
+        .sidebar {
+          display: flex;
+          //visibility: visible;
         }
       }
     }

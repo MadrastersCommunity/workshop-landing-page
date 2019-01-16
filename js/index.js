@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
           const target = el.parentElement.dataset.target;
           const $target = document.getElementById(target);
   
+          if(el.parentElement.classList.contains('is-initial')){
+            el.parentElement.classList.toggle('is-initial')
+          }
+
+          if($target.classList.contains('is-initial')){
+            $target.classList.toggle('is-initial')
+          }
+
           el.parentElement.classList.toggle('is-active');
           $target.classList.toggle('is-active');
   
