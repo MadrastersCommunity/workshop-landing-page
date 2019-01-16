@@ -152,17 +152,17 @@ body {
     }
 
     &.is-workshop-1.is-active {
-      animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62);
+      animation: slideInLeft 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62);
     }
 
     &.is-workshop-2.is-active {
-      animation: slideInRight 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62);
+      animation: slideInRight 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62);
     }
 
     &.is-workshop-1 .sidebar {
       background-color: $workshop-1;
       background-image: url("../images/tamil-calligraphy-bg.png");
-      animation: slideInLeft 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62);
+      animation: slideInLeft 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62);
       p {
         transform: rotate(-180deg);
         text-align: right;
@@ -272,6 +272,7 @@ body {
         font-weight: 500;
         margin-bottom: 1rem;
         text-transform: uppercase;
+        word-wrap: break-word;
 
         span {
           font-weight: 900;

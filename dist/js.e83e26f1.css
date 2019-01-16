@@ -6855,13 +6855,13 @@ body {
     .main-section .workshop.is-workshop-2 {
       background-color: #f5fbfd; }
     .main-section .workshop.is-workshop-1.is-active {
-      animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
+      animation: slideInLeft 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-2.is-active {
-      animation: slideInRight 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
+      animation: slideInRight 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
     .main-section .workshop.is-workshop-1 .sidebar {
       background-color: #e22f26;
       background-image: url("tamil-calligraphy-bg.d47af501.png");
-      animation: slideInLeft 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
+      animation: slideInLeft 0.15s cubic-bezier(0.09, 0.73, 0.97, 0.62); }
       .main-section .workshop.is-workshop-1 .sidebar p {
         transform: rotate(-180deg);
         text-align: right; }
