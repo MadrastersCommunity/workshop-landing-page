@@ -55,6 +55,7 @@ body {
 .full-width-section {
   margin: 0;
   padding: 0;
+  background-color: $white-ter;
 
   .title {
     width: 100%;
@@ -199,8 +200,8 @@ body {
           font-weight: bold;
           text-transform: uppercase;
           border-radius: 0;
-          font-size: 0.9rem;
-          padding: 1.2em 1.8em;
+          font-size: 1rem;
+          padding: 1.3em 1.9em;
           box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
           transition: all 0.3s ease-in;
@@ -219,7 +220,7 @@ body {
           &:hover {
             transform: translateX(-3px);
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.17);
-            padding: 1.2em 1.5em;
+            padding: 1.3em 1.6em;
           }
 
           &:hover i,
@@ -228,8 +229,8 @@ body {
           }
 
           @media screen and (max-width: 767px) {
-            padding: 1.2em 1.6em;
-            font-size: 0.7rem;
+            padding: 1.2em 1.7em;
+            font-size: 0.75rem;
           }
         }
 
@@ -283,8 +284,8 @@ body {
         margin: 1rem 0;
 
         img {
-          width: 400px;
-          height: auto;
+          width: auto;
+          height: 400px;
           object-fit: contain;
           margin: 2rem auto;
           display: block;

@@ -6786,7 +6786,8 @@ body {
 
 .full-width-section {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background-color: whitesmoke; }
   .full-width-section .title {
     width: 100%;
     padding: 2rem;
@@ -6889,8 +6890,8 @@ body {
           font-weight: bold;
           text-transform: uppercase;
           border-radius: 0;
-          font-size: 0.9rem;
-          padding: 1.2em 1.8em;
+          font-size: 1rem;
+          padding: 1.3em 1.9em;
           box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
           transition: all 0.3s ease-in;
@@ -6906,14 +6907,14 @@ body {
           .main-section .workshop .banner .banner-overlay .button:hover {
             transform: translateX(-3px);
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.17);
-            padding: 1.2em 1.5em; }
+            padding: 1.3em 1.6em; }
           .main-section .workshop .banner .banner-overlay .button:hover i,
           .main-section .workshop .banner .banner-overlay .button:hover svg {
             display: inline-block; }
           @media screen and (max-width: 767px) {
             .main-section .workshop .banner .banner-overlay .button {
-              padding: 1.2em 1.6em;
-              font-size: 0.7rem; } }
+              padding: 1.2em 1.7em;
+              font-size: 0.75rem; } }
         .main-section .workshop .banner .banner-overlay .button.is-workshop-1-button {
           top: -8%;
           left: 8%;
@@ -6950,8 +6951,8 @@ body {
         font-weight: 300;
         margin: 1rem 0; }
         .main-section .workshop .about .content img {
-          width: 400px;
-          height: auto;
+          width: auto;
+          height: 400px;
           object-fit: contain;
           margin: 2rem auto;
           display: block; }
