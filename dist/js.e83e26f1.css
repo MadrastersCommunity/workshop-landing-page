@@ -6959,21 +6959,21 @@ body {
         .main-section .workshop .banner,
         .main-section .workshop .about {
           display: none; }
-        .main-section .workshop .sidebar {
+        .main-section .workshop .sidebar, .main-section .workshop.is-workshop-1 .sidebar, .main-section .workshop.is-workshop-2 .sidebar {
           display: flex; }
         .main-section .workshop.is-active {
           width: 80%; }
           .main-section .workshop.is-active .banner,
           .main-section .workshop.is-active .about {
             display: block; }
-          .main-section .workshop.is-active .sidebar {
+          .main-section .workshop.is-active .sidebar, .main-section .workshop.is-active.is-workshop-1 .sidebar, .main-section .workshop.is-active.is-workshop-2 .sidebar {
             display: none; }
         .main-section .workshop.is-initial {
           width: 50%; }
           .main-section .workshop.is-initial .banner,
           .main-section .workshop.is-initial .about {
             display: none; }
-          .main-section .workshop.is-initial .sidebar {
+          .main-section .workshop.is-initial .sidebar, .main-section .workshop.is-initial.is-workshop-1 .sidebar, .main-section .workshop.is-initial.is-workshop-2 .sidebar {
             display: flex; } }
     @media screen and (min-width: 769px) {
       .main-section .workshop.is-active {

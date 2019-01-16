@@ -146,19 +146,18 @@ body {
     }
 
     &.is-workshop-1.is-active {
-      animation: slideInLeft 0.2s cubic-bezier(.09,.73,.97,.62);
-  
+      animation: slideInLeft 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62);
     }
 
     &.is-workshop-2.is-active {
-      animation: slideInRight 0.2s cubic-bezier(.09,.73,.97,.62);
+      animation: slideInRight 0.2s cubic-bezier(0.09, 0.73, 0.97, 0.62);
     }
 
     &.is-workshop-1 .sidebar {
       background-color: $workshop-1;
       background-image: url("../images/tamil-calligraphy-bg.png");
-      animation: slideInLeft 0.1s cubic-bezier(.09,.73,.97,.62);
-      p{
+      animation: slideInLeft 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62);
+      p {
         transform: rotate(-180deg);
         text-align: right;
       }
@@ -168,8 +167,8 @@ body {
       background-color: $workshop-2;
       background-image: url("../images/micro-interaction-bg.png");
       background-repeat: repeat;
-      animation: slideInRight 0.1s cubic-bezier(.09,.73,.97,.62);
-      p{
+      animation: slideInRight 0.1s cubic-bezier(0.09, 0.73, 0.97, 0.62);
+      p {
         text-align: left;
       }
     }
@@ -297,7 +296,7 @@ body {
         //visibility: hidden;
       }
 
-      .sidebar {
+      .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
         display: flex;
         //visibility: visible;
       }
@@ -311,21 +310,21 @@ body {
           //visibility: visible;
         }
 
-        .sidebar {
+        .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
           display: none;
           //visibility: hidden;
         }
       }
 
       &.is-initial {
-        width:50%;
+        width: 50%;
         .banner,
         .about {
           display: none;
           //visibility: hidden;
         }
-  
-        .sidebar {
+
+        .sidebar, &.is-workshop-1 .sidebar, &.is-workshop-2 .sidebar {
           display: flex;
           //visibility: visible;
         }
@@ -334,10 +333,9 @@ body {
 
     @media screen and (min-width: $tablet) {
       &.is-active {
-        animation: none!important;
+        animation: none !important;
       }
     }
-
   }
 }
 
