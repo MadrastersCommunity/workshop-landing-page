@@ -267,6 +267,10 @@ body {
         padding: 3rem;
       }
 
+      @media screen and (min-width: $desktop) {
+        min-height: 170vh;
+      }
+
       .title {
         font-size: 2.2rem;
         font-weight: 500;
