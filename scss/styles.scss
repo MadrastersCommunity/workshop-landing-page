@@ -205,7 +205,7 @@ body {
           font-weight: bold;
           text-transform: uppercase;
           border-radius: 0;
-          font-size: 1rem;
+          font-size: 1.2rem;
           padding: 1.3em 1.9em;
           box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
           border-radius: 1px;
@@ -234,6 +234,7 @@ body {
           }
 
           @media screen and (max-width: 767px) {
+            font-size: 1.1rem;
             padding: 1.2em 1.7em;
             font-size: 0.75rem;
           }
@@ -296,6 +297,57 @@ body {
           margin: 2rem auto;
           display: block;
         }
+      }
+
+      .button {
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 0;
+        font-size: 1.2rem;
+        padding: 1.3em 1.9em;
+        box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.17);
+        border-radius: 1px;
+        transition: all 0.3s ease-in;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        i,
+        svg {
+          display: none;
+          margin-left: 8px;
+          font-size: 0.75rem;
+          margin-top: -2px;
+        }
+
+        &:hover {
+          transform: translateX(-3px);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.17);
+          padding: 1.3em 1.6em;
+        }
+
+        &:hover i,
+        &:hover svg {
+          display: inline-block;
+        }
+
+        @media screen and (max-width: 767px) {
+          font-size: 1.1rem;
+          padding: 1.2em 1.7em;
+          font-size: 0.75rem;
+        }
+      }
+
+      .button.is-workshop-1-button {
+        background-color: #e54b27;
+        color: $white;
+        border-color: transparent;
+      }
+
+      .button.is-workshop-2-button {
+        background-color: #02277b;
+        color: $white;
+        border-color: transparent;
       }
     }
 
