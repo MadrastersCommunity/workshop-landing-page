@@ -267,8 +267,16 @@ body {
         padding: 3rem;
       }
 
-      @media screen and (min-width: $desktop) {
-        min-height: 170vh;
+      &#about-speaker {
+        @media screen and (min-width: $desktop) {
+          min-height: 170vh;
+        }
+      }
+
+      &#about-workshop {
+        @media screen and (min-width: $desktop) {
+          min-height: 140vh;
+        }
       }
 
       .title {
@@ -335,7 +343,6 @@ body {
         }
 
         @media screen and (max-width: 767px) {
-          
           padding: 1.3em 1.7em;
           font-size: 0.85rem;
         }
