@@ -6917,7 +6917,6 @@ body {
             display: inline-block; }
           @media screen and (max-width: 767px) {
             .main-section .workshop .banner .banner-overlay .button {
-              font-size: 1.1rem;
               padding: 1.2em 1.7em;
               font-size: 0.75rem; } }
         .main-section .workshop .banner .banner-overlay .button.is-workshop-1-button {
@@ -6989,9 +6988,8 @@ body {
           display: inline-block; }
         @media screen and (max-width: 767px) {
           .main-section .workshop .about .button {
-            font-size: 1.1rem;
-            padding: 1.2em 1.7em;
-            font-size: 0.75rem; } }
+            padding: 1.3em 1.7em;
+            font-size: 0.85rem; } }
       .main-section .workshop .about .button.is-workshop-1-button {
         background-color: #e54b27;
         color: white;
