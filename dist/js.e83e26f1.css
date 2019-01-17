@@ -6941,10 +6941,10 @@ body {
           padding: 3rem; } }
       @media screen and (min-width: 1088px) {
         .main-section .workshop .about#about-speaker {
-          min-height: 170vh; } }
+          min-height: 1100px; } }
       @media screen and (min-width: 1088px) {
         .main-section .workshop .about#about-workshop {
-          min-height: 140vh; } }
+          min-height: 900px; } }
       .main-section .workshop .about .title {
         font-size: 2.2rem;
         font-weight: 500;
