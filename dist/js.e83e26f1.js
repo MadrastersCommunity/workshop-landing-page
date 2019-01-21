@@ -170,54 +170,56 @@ var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
 },{"./../images/tamil-calligraphy-bg.png":[["tamil-calligraphy-bg.d47af501.png","images/tamil-calligraphy-bg.png"],"images/tamil-calligraphy-bg.png"],"./../images/micro-interaction-bg.png":[["micro-interaction-bg.f89aa0a9.png","images/micro-interaction-bg.png"],"images/micro-interaction-bg.png"],"_css_loader":"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
-'use strict';
+"use strict";
 
-require('../scss/styles.scss');
+require("../scss/styles.scss");
 
 /**
  * Actions after DOM Loaded
  */
-document.addEventListener('DOMContentLoaded', function () {
-
+document.addEventListener("DOMContentLoaded", function () {
   /**
    * For Navbar Collapse
    */
 
-  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+  var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll(".navbar-burger"), 0);
   if ($navbarBurgers.length > 0) {
-
     $navbarBurgers.forEach(function (el) {
-      el.addEventListener('click', function () {
-
+      el.addEventListener("click", function () {
         var target = el.dataset.target;
         var $target = document.getElementById(target);
 
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
       });
     });
   }
 
   //const $workshop = Array.prototype.slice.call(document.querySelectorAll('.workshop'), 0);
-  var $sidebar = Array.prototype.slice.call(document.querySelectorAll('.workshop .sidebar'), 0);
+  var $sidebar = Array.prototype.slice.call(document.querySelectorAll(".workshop .sidebar"), 0);
   if ($sidebar.length > 0) {
-
     $sidebar.forEach(function (el) {
-      el.addEventListener('click', function () {
-
+      el.addEventListener("click", function () {
         var target = el.parentElement.dataset.target;
         var $target = document.getElementById(target);
 
-        if (el.parentElement.classList.contains('is-initial')) {
-          el.parentElement.classList.toggle('is-initial');
+        if ($target.classList.contains("is-initial")) {
+          $target.classList.toggle("is-initial");
         }
 
-        if ($target.classList.contains('is-initial')) {
-          $target.classList.toggle('is-initial');
+        if (el.parentElement.classList.contains("is-initial")) {
+          el.parentElement.classList.toggle("is-initial");
+          if (!el.parentElement.classList.contains("is-active")) {
+            el.parentElement.classList.toggle("is-active");
+          }
+          if ($target.classList.contains("is-active")) {
+            $target.classList.toggle("is-active");
+          }
+          return;
         }
 
-        el.parentElement.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+        el.parentElement.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
       });
     });
   }
@@ -253,7 +255,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55922' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50193' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
