@@ -21,6 +21,7 @@
   "homepage": "https://github.com/MadrastersCommunity/workshop-landing-page#readme",
   "dependencies": {
     "bulma": "^0.7.2",
+    "lightgallery": "^1.6.12",
     "sass": "^1.16.0",
     "scss": "^0.2.4"
   },

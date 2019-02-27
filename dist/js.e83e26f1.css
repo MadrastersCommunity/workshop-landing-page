@@ -7054,3 +7054,15 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem; }
+
+.gallery {
+  width: 100%; }
+  .gallery a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 120px; }
+    .gallery a img {
+      width: 100%;
+      height: auto; }

@@ -442,3 +442,19 @@ footer {
   justify-content: center;
   padding: 1rem;
 }
+
+.gallery {
+  width: 100%;
+  a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 120px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

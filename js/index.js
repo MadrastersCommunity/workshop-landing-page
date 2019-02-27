@@ -53,10 +53,13 @@ document.addEventListener("DOMContentLoaded", () => {
           return;
         }
 
-       
         el.parentElement.classList.toggle("is-active");
         $target.classList.toggle("is-active");
       });
     });
   }
+
+  lightGallery(document.getElementById('lightgallery')); 
+
 });
+
